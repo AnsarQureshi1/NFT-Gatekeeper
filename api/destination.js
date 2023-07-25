@@ -1,7 +1,7 @@
 var myHeaders = new Headers()
 myHeaders.append('accept', 'application/json')
 myHeaders.append('Content-Type', 'application/json')
-myHeaders.append('x-api-key', 'QN_32832918b5cd4ba88240a72cf70adaed')
+myHeaders.append('x-api-key', process.env.API_KEY)
 
 var requestOptions = {
 	method: 'POST',

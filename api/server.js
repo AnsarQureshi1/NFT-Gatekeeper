@@ -4,7 +4,7 @@ const app = express()
 const PORT = 4000
 const ABI = require("./ABI.json")
 const CONTRACT_ADDRESS = "0xA4924001Dde359Dc5aaF896b236aAE5b18d5E8C0"
-const Node_Provider = "https://blissful-long-mound.ethereum-sepolia.discover.quiknode.pro/2732edfbb85d97a8994f200a578509386646ce48/"
+const Node_Provider = process.env.Node_Provider
 const cors = require("cors")
 const socketIo = require("socket.io")
 
